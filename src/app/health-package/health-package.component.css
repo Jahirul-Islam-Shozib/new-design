@@ -11,27 +11,12 @@
 .content{
   height:auto;
 }
-.package-image{
-  background-image: url("https://jotno.net/assets/image/logo.png");
-  background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
-  background-position: right;
-  background-size: 300px 100px;
-}
-.image{
-  max-width: 100%;
-  height: auto;
-}
-/*img{*/
-/*  width:680px;*/
-/*  height:100%;*/
-/*  border-radius: 5px;*/
-/*}*/
 .content-section{
-  display: block;
-  padding:30px;
-  background-color: #ECF2FF;
-  border-radius: 5px;
+ padding: 30px;
+  /*border-radius: 5px;*/
+  /*border-bottom: 2px solid #333;*/
+  /*border-bottom-color: #999;;*/
+  /*margin-bottom:30px;*/
 }
 h2,h3{
   margin:0;
@@ -44,20 +29,13 @@ h3{
   color: #00a0a7!important;
 
 }
-.details-section{
-  background-image: url("https://jotno.net/assets/image/logo.png");
-  background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
-  background-position: right;
-  background-size: 300px 100px;
-}
 .main-price{
   text-decoration: line-through;
   color: #666!important;
 }
 .service-section{
-  margin-top:20px;
-  margin-bottom: 10px;
+  margin-top:10px;
+  /*margin-bottom: 10px;*/
 
 }
 ul{
@@ -73,7 +51,7 @@ li{
   cursor: pointer;
 }
 button{
-  width:50%;
+  width:70%;
   padding:10px 0;
   font-size: 20px;
   color:#FFFFFF;
@@ -85,6 +63,51 @@ button{
   font-weight: 700;
   text-align: center;
 }
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  /* CSS styles for laptops go here */
+@media (max-width: 480px){
+  img{
+    width:100%;
+    border-radius: 4px;
+  }
+  button{
+    width:100%;
+  }
+  .container{
+    padding:20px 0;
+  }
+  .content-section{
+    padding:0px 14px;
+  }
+  .details-section{
+    margin-top: 10px;
+  }
+
+}
+@media (min-width: 981px){
+  img{
+    border-radius: 4px;
+    width:680px;
+    height:100%;
+  }
+.content-section{
+  background-color: #ECF2FF;
+}
+}
+@media (min-width: 481px) and (max-width: 979px){
+  .container{
+    padding:0;
+    margin:0;
+  }
+  .content-section{
+    padding:10px 15px;
+  }
+  img{
+    width:100%;
+    border-radius: 4px;
+  }
+  button{
+    width:100%;
+  }
+  .details-section{
+    margin-top: 10px;
+  }
 }
